@@ -23,7 +23,7 @@ app.get('/api/v1/health', (_request, response) => {
 
 app.use('/api/v1/listings', listingRoutes);
 
-app.use((error: unknown, _request: express.Request, response: express.Response, _next: express.NextFunction) => {
+app.use((error: unknown, _request: express.Request, response: express.Response) => {
   console.error(error);
   response.status(500).json({ success: false, message: 'Unable to complete request' });
 });
