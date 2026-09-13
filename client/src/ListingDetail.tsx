@@ -3,7 +3,7 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import type { LatLngExpression } from 'leaflet'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
-import { cityCoordinates, markerIcon } from './MapView'
+import { cityCoordinates, markerIcon } from './mapData'
 import './ListingDetail.css'
 
 type ListingDetailProps = {
