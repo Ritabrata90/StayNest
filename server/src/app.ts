@@ -4,8 +4,9 @@ import helmet from 'helmet';
 import listingRoutes from './routes/listing.routes.js';
 
 const app = express();
+const helmetMiddleware = helmet as unknown as () => express.RequestHandler;
 
-app.use(helmet());
+app.use(helmetMiddleware());
 app.use(cors({
   origin: (origin, callback) => {
     const configuredOrigin = process.env.CLIENT_URL;
