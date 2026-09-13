@@ -1,0 +1,224 @@
+.auth-page {
+    max-width: 1240px;
+    width: 100%;
+    min-width: 0;
+    min-height: 660px;
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(400px, .9fr);
+    background: #f0eee7;
+}
+
+.auth-art {
+    min-height: 660px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    padding: 58px;
+    color: #fffdf9;
+    background-color: #718274;
+    background-image: linear-gradient(180deg, #263a3340 10%, #263a33c7 100%), url('https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1200&q=85');
+    background-position: center;
+    background-size: cover;
+}
+
+.auth-art-copy {
+    max-width: 430px;
+}
+
+.auth-art-index,
+.auth-art-location {
+    color: #fffdf9c7;
+    font: 600 10px 'DM Sans', sans-serif;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.auth-art h1 {
+    margin: 25px 0 18px;
+    font: 500 clamp(42px, 5vw, 66px)/.96 'Playfair Display', serif;
+    letter-spacing: -2px;
+}
+
+.auth-art h1 em {
+    color: #f0b29b;
+    font-style: italic;
+}
+
+.auth-art p {
+    max-width: 260px;
+    margin: 0;
+    color: #fffdf9d9;
+    font: 14px/1.6 'DM Sans', sans-serif;
+}
+
+.auth-art-location {
+    position: absolute;
+    right: 34px;
+    top: 32px;
+    writing-mode: vertical-rl;
+}
+
+.auth-panel {
+    min-width: 0;
+    padding: 48px clamp(34px, 6vw, 76px);
+    background: #fffdf9;
+}
+
+.auth-back {
+    padding: 0;
+    border: 0;
+    color: #7d837b;
+    background: transparent;
+    font: 500 12px 'DM Sans', sans-serif;
+}
+
+.auth-heading {
+    margin-top: 72px;
+}
+
+.auth-heading .eyebrow {
+    margin-bottom: 13px;
+}
+
+.auth-heading h2 {
+    margin: 0;
+    color: #30443b;
+    font: 500 clamp(32px, 4vw, 46px)/1.05 'Playfair Display', serif;
+    letter-spacing: -1.4px;
+}
+
+.auth-heading>p:last-child {
+    margin: 16px 0 0;
+    color: #7d837b;
+    font: 14px/1.5 'DM Sans', sans-serif;
+}
+
+.auth-tabs {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+    border-bottom: 1px solid #deddd5;
+}
+
+.auth-tab {
+    padding: 0 0 13px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: #9a9d95;
+    background: transparent;
+    font: 600 12px 'DM Sans', sans-serif;
+}
+
+.auth-tab.active {
+    color: #bd6048;
+    border-color: #bd6048;
+}
+
+.auth-form {
+    display: grid;
+    gap: 21px;
+    margin-top: 30px;
+}
+
+.auth-form label {
+    color: #b16852;
+    font: 600 10px 'DM Sans', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.auth-form input {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 13px 0;
+    border: 0;
+    border-bottom: 1px solid #d8d7cf;
+    outline: 0;
+    color: #30443b;
+    background: transparent;
+    font: 14px 'DM Sans', sans-serif;
+}
+
+.auth-form input:focus {
+    border-color: #bd6048;
+}
+
+.auth-form input::placeholder {
+    color: #a5a89f;
+}
+
+.forgot-link {
+    justify-self: start;
+    margin-top: -6px;
+    padding: 0;
+    border: 0;
+    color: #7d837b;
+    background: transparent;
+    font: 12px 'DM Sans', sans-serif;
+}
+
+.auth-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    margin-top: 9px;
+    padding: 0 18px 0 21px;
+    border: 0;
+    color: #fffdf9;
+    background: #d16a4e;
+    font: 600 12px 'DM Sans', sans-serif;
+}
+
+.auth-submit span {
+    font-size: 18px;
+}
+
+.auth-success {
+    margin: 18px 0 0;
+    color: #52705e;
+    font: 12px/1.5 'DM Sans', sans-serif;
+}
+
+.auth-legal {
+    margin: 25px 0 0;
+    color: #a1a39b;
+    font: 11px/1.5 'DM Sans', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .auth-page {
+        display: block;
+        min-height: auto;
+    }
+    .auth-art {
+        min-height: 420px;
+    }
+    .auth-panel {
+        padding: 44px clamp(28px, 8vw, 76px) 58px;
+    }
+}
+
+@media (max-width: 760px) {
+    .auth-page {
+        min-height: auto;
+        margin-bottom: 45px;
+        display: block;
+    }
+    .auth-art {
+        min-height: 340px;
+        padding: 32px 24px;
+    }
+    .auth-art-location {
+        right: 20px;
+        top: 22px;
+    }
+    .auth-panel {
+        padding: 34px 24px 48px;
+    }
+    .auth-heading {
+        margin-top: 48px;
+    }
+}
